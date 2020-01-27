@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Responsive</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        header {
+            width: 100%;
+            height: 10vh;
+            background-color: lightskyblue;
+            display: flex;
+            justify-content: center;
+        }
+
+        header>div {
+            width: 60%;
+        }
+
+        ul {
+            list-style-type: none;
+            display: inline-flex;
+            float: right;
+        }
+
+        li,
+        a {
+            padding: 10px;
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+
+        .active {
+            padding: 10px;
+            display: inline-block;
+        }
+
+        @media screen and (max-width: 500px) {
+            header {
+                flex-direction: column;
+                height: 40vh;
+            }
+            header>div {
+                width: 90%;
+                height: 40vh;
+                margin: auto;
+            }
+
+            .active {
+                display: block;
+            }
+            ul{
+                display: block;
+                width:100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div>
+            <nav>
+                <ul>
+                <div class="active">
+                    <a href="">Homestay</a>
+                </div>
+                <!-- <ul> -->
+                    <li><a href="">INR</a></li>
+                    <li><a href="">Help</a></li>
+                    <li><a href="">Login</a></li>
+                    <li><a href="">Sign-Up</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+</body>
+</html>
